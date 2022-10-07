@@ -19,8 +19,9 @@ const updateProfile = expressAsyncHandler(async (req, res) => {
             district: req.body.district || account.userInfo.district,
             street: req.body.street || account.userInfo.street,
         }
-        Object.assign(account, { userInfo: userInfo });
-        const accountUpdated = await account.save().select('-__v -password');
+        
+        account.userInfo = userInfo;
+        const accountUpdated = await account.save();
         res.json(accountUpdated)
     } else {
         res.status(401);

@@ -7,7 +7,7 @@ const protect = expressAsyncHandler(async (req, res, next) => {
     if (authorization && authorization.startsWith('Bearer')) {
         try {
             const token = req.headers.authorization.split(' ')[1];
-            const userVerify = jwt.verify(token, process.env.JWT_SECRET);
+            const userVerify = jwt.verify(token, process.env.JWT_SECRET_LOGIN);
             req.user = await Account.findById(userVerify.id).select('-password');
             next();
         } catch (error) {
