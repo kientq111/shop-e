@@ -7,7 +7,7 @@ const { getAllUsers, updateProfile } = require('../controllers/userController');
 // @desc: get all user
 // @route: GET /api/users
 // @access: Public - return token
-router.get('/', protect, getAllUsers);
+router.get('/', protect, isAdmin, getAllUsers);
 
 
 // 2.

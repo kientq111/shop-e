@@ -7,6 +7,7 @@ var { errorHandle } = require('./middlewares/error.Middleware');
 var connectDB = require('./config/db')
 const usersRouter = require('./routes/users');
 const accountRouter = require('./routes/accounts');
+const productRouter = require('./routes/products');
 
 //Initial Server
 require('dotenv').config()
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/users', usersRouter);
 app.use('/api/accounts', accountRouter);
+app.use('/api/products', productRouter);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));

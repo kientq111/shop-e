@@ -22,19 +22,19 @@ router.put('/status', protect, isAdmin, changeAccountStatus);
 
 // 4.
 // @desc: Verify Account
-// @route: PUT /api/accounts/verify
+// @route: GET /api/accounts/verify
 // @access: Public - return token
 router.get('/verify', protect, sendMailVerify);
 
 // 5.
 // @desc: Verify Account
-// @route: PUT /api/accounts/verify
+// @route: POST /api/accounts/verify
 // @access: Public - return token
 router.post('/verify', protect, VerifyMailToken);
 
 // 6.
 // @desc: Change Password
-// @route: PUT /api/accounts/verify
+// @route: PUT /api/accounts/password
 // @access: Public - return token
 router.put('/password', protect, changePassword);
 
