@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const { protect, isAdmin } = require('../middlewares/auth.Middleware')
-const { getAllUsers, updateProfile } = require('../controllers/userController');
+const { getAllUsers, updateProfile, getUserById } = require('../controllers/userController');
 
 // 1.
 // @desc: get all user
@@ -15,5 +15,8 @@ router.get('/', protect, isAdmin, getAllUsers);
 // @route: GET /api/users
 // @access: Public - return token
 router.put('/profile', protect, updateProfile);
+
+
+router.get('/:id', protect, getUserById);
 
 module.exports = router;

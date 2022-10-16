@@ -19,7 +19,7 @@ const updateProfile = expressAsyncHandler(async (req, res) => {
             district: req.body.district || account.userInfo.district,
             street: req.body.street || account.userInfo.street,
         }
-        
+
         account.userInfo = userInfo;
         const accountUpdated = await account.save();
         res.json(accountUpdated)
@@ -29,5 +29,22 @@ const updateProfile = expressAsyncHandler(async (req, res) => {
     }
 })
 
+const getUserById = expressAsyncHandler(async (req, res) => {
+    try {
+        const account = await Account.findById(req.params.id).select('-password -__v');
+        if (account) {
+            res.json(account);
+        } else {
+            res.status(400).json({
+                message: "Not found Account"
+            })
+        }
+    } catch (error) {
+        res.status(400).json({
+            message: "Not found Account"
+        })
+    }
+})
 
-module.exports = { getAllUsers, updateProfile }
+
+module.exports = { getAllUsers, updateProfile, getUserById }

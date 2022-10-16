@@ -1,123 +1,123 @@
 const products = [{
-    "productName": "Sigma Designs, Inc.",
-    "description": "turpis enim blandit mi in porttitor pede justo eu massa donec dapibus duis at velit eu",
-    "image": "http://dummyimage.com/216x100.png/cc0000/ffffff",
-    "price": 4921,
-    "countInStock": 13
+    "productName": "Realmix",
+    "description": "semper rutrum nulla nunc purus phasellus in felis donec semper sapien a",
+    "image": "http://dummyimage.com/211x100.png/5fa2dd/ffffff",
+    "price": 4958,
+    "category": "Roofing (Asphalt)"
 }, {
-    "productName": "MedEquities Realty Trust, Inc.",
-    "description": "nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros",
-    "image": "http://dummyimage.com/167x100.png/5fa2dd/ffffff",
-    "price": 1589,
-    "countInStock": 27
+    "productName": "Twitterbridge",
+    "description": "elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget",
+    "image": "http://dummyimage.com/235x100.png/dddddd/000000",
+    "price": 6184,
+    "category": "Retaining Wall and Brick Pavers"
 }, {
-    "productName": "VictoryShares US Small Cap High Div Volatility Wtd ETF",
-    "description": "accumsan tellus nisi eu orci mauris lacinia sapien quis libero",
-    "image": "http://dummyimage.com/241x100.png/cc0000/ffffff",
-    "price": 237,
-    "countInStock": 97
+    "productName": "Kanoodle",
+    "description": "in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus",
+    "image": "http://dummyimage.com/112x100.png/cc0000/ffffff",
+    "price": 4513,
+    "category": "Structural and Misc Steel (Fabrication)"
 }, {
-    "productName": "MIDSTATES PETROLEUM COMPANY, INC.",
-    "description": "sed vestibulum sit amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus",
-    "image": "http://dummyimage.com/100x100.png/cc0000/ffffff",
-    "price": 4947,
-    "countInStock": 73
+    "productName": "Youbridge",
+    "description": "vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes",
+    "image": "http://dummyimage.com/147x100.png/dddddd/000000",
+    "price": 6407,
+    "category": "Fire Sprinkler System"
 }, {
-    "productName": "Delek US Holdings, Inc.",
-    "description": "nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque",
-    "image": "http://dummyimage.com/157x100.png/ff4444/ffffff",
-    "price": 1099,
-    "countInStock": 26
+    "productName": "Vidoo",
+    "description": "ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo",
+    "image": "http://dummyimage.com/156x100.png/5fa2dd/ffffff",
+    "price": 8522,
+    "category": "Framing (Wood)"
 }, {
-    "productName": "Trupanion, Inc.",
-    "description": "ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor",
-    "image": "http://dummyimage.com/249x100.png/cc0000/ffffff",
-    "price": 4965,
-    "countInStock": 61
+    "productName": "Vinte",
+    "description": "vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi",
+    "image": "http://dummyimage.com/168x100.png/ff4444/ffffff",
+    "price": 4776,
+    "category": "Waterproofing & Caulking"
 }, {
-    "productName": "PowerShares Russell 1000 Low Beta Equal Weight Portfolio",
-    "description": "mauris sit amet eros suspendisse accumsan tortor quis turpis sed",
-    "image": "http://dummyimage.com/215x100.png/ff4444/ffffff",
-    "price": 8121,
-    "countInStock": 62
+    "productName": "Rhyloo",
+    "description": "mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim",
+    "image": "http://dummyimage.com/117x100.png/dddddd/000000",
+    "price": 6647,
+    "category": "Construction Clean and Final Clean"
 }, {
-    "productName": "Peabody Energy Corporation",
-    "description": "tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero",
-    "image": "http://dummyimage.com/188x100.png/5fa2dd/ffffff",
-    "price": 3725,
-    "countInStock": 61
+    "productName": "Vinte",
+    "description": "rutrum nulla nunc purus phasellus in felis donec semper sapien a",
+    "image": "http://dummyimage.com/152x100.png/ff4444/ffffff",
+    "price": 6976,
+    "category": "Marlite Panels (FED)"
 }, {
-    "productName": "Roka Bioscience, Inc.",
-    "description": "dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis",
-    "image": "http://dummyimage.com/140x100.png/ff4444/ffffff",
-    "price": 591,
-    "countInStock": 64
+    "productName": "Oba",
+    "description": "sed magna at nunc commodo placerat praesent blandit nam nulla integer pede",
+    "image": "http://dummyimage.com/145x100.png/cc0000/ffffff",
+    "price": 3820,
+    "category": "Soft Flooring and Base"
 }, {
-    "productName": "Morningstar, Inc.",
-    "description": "ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac",
-    "image": "http://dummyimage.com/210x100.png/ff4444/ffffff",
-    "price": 688,
-    "countInStock": 58
+    "productName": "Ainyx",
+    "description": "facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum",
+    "image": "http://dummyimage.com/162x100.png/5fa2dd/ffffff",
+    "price": 313,
+    "category": "Plumbing & Medical Gas"
 }, {
-    "productName": "BiondVax Pharmaceuticals Ltd.",
-    "description": "interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
-    "image": "http://dummyimage.com/186x100.png/cc0000/ffffff",
-    "price": 2424,
-    "countInStock": 50
+    "productName": "Wordware",
+    "description": "quisque erat eros viverra eget congue eget semper rutrum nulla nunc",
+    "image": "http://dummyimage.com/229x100.png/cc0000/ffffff",
+    "price": 4149,
+    "category": "Wall Protection"
 }, {
-    "productName": "CNH Industrial N.V.",
-    "description": "convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum",
-    "image": "http://dummyimage.com/222x100.png/ff4444/ffffff",
-    "price": 4907,
-    "countInStock": 100
+    "productName": "Edgeclub",
+    "description": "vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti",
+    "image": "http://dummyimage.com/230x100.png/dddddd/000000",
+    "price": 1517,
+    "category": "Curb & Gutter"
 }, {
-    "productName": "PIMCO Dynamic Income Fund",
-    "description": "libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti",
-    "image": "http://dummyimage.com/120x100.png/5fa2dd/ffffff",
-    "price": 8296,
-    "countInStock": 62
+    "productName": "Feedmix",
+    "description": "dolor sit amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam",
+    "image": "http://dummyimage.com/111x100.png/dddddd/000000",
+    "price": 7883,
+    "category": "Overhead Doors"
 }, {
-    "productName": "Lincoln Educational Services Corporation",
-    "description": "primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra",
-    "image": "http://dummyimage.com/156x100.png/ff4444/ffffff",
-    "price": 2067,
-    "countInStock": 83
+    "productName": "Lajo",
+    "description": "bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa",
+    "image": "http://dummyimage.com/150x100.png/ff4444/ffffff",
+    "price": 6465,
+    "category": "Overhead Doors"
 }, {
-    "productName": "AT&T Inc.",
-    "description": "arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium",
-    "image": "http://dummyimage.com/207x100.png/dddddd/000000",
-    "price": 42,
-    "countInStock": 50
+    "productName": "Katz",
+    "description": "massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est",
+    "image": "http://dummyimage.com/241x100.png/5fa2dd/ffffff",
+    "price": 6707,
+    "category": "Drilled Shafts"
 }, {
-    "productName": "Willis Towers Watson Public Limited Company",
-    "description": "ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit",
-    "image": "http://dummyimage.com/150x100.png/cc0000/ffffff",
-    "price": 4030,
-    "countInStock": 92
+    "productName": "Mymm",
+    "description": "eu est congue elementum in hac habitasse platea dictumst morbi vestibulum",
+    "image": "http://dummyimage.com/242x100.png/cc0000/ffffff",
+    "price": 2248,
+    "category": "Doors, Frames & Hardware"
 }, {
-    "productName": "Quotient Technology Inc.",
-    "description": "amet eros suspendisse accumsan tortor quis turpis sed ante vivamus",
-    "image": "http://dummyimage.com/231x100.png/5fa2dd/ffffff",
-    "price": 2375,
-    "countInStock": 59
+    "productName": "Rhybox",
+    "description": "nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat",
+    "image": "http://dummyimage.com/136x100.png/cc0000/ffffff",
+    "price": 258,
+    "category": "Structural and Misc Steel (Fabrication)"
 }, {
-    "productName": "Tellurian Inc.",
-    "description": "volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim",
-    "image": "http://dummyimage.com/243x100.png/5fa2dd/ffffff",
-    "price": 4704,
-    "countInStock": 87
+    "productName": "Photobug",
+    "description": "pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut",
+    "image": "http://dummyimage.com/203x100.png/ff4444/ffffff",
+    "price": 8615,
+    "category": "Marlite Panels (FED)"
 }, {
-    "productName": "Armada Hoffler Properties, Inc.",
-    "description": "sit amet eleifend pede libero quis orci nullam molestie nibh",
-    "image": "http://dummyimage.com/204x100.png/ff4444/ffffff",
-    "price": 1582,
-    "countInStock": 57
+    "productName": "Jabbercube",
+    "description": "ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum",
+    "image": "http://dummyimage.com/246x100.png/5fa2dd/ffffff",
+    "price": 7686,
+    "category": "Structural and Misc Steel (Fabrication)"
 }, {
-    "productName": "Best Buy Co., Inc.",
-    "description": "aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu",
-    "image": "http://dummyimage.com/197x100.png/dddddd/000000",
-    "price": 2718,
-    "countInStock": 36
+    "productName": "Browsecat",
+    "description": "phasellus id sapien in sapien iaculis congue vivamus metus arcu",
+    "image": "http://dummyimage.com/165x100.png/cc0000/ffffff",
+    "price": 6912,
+    "category": "Marlite Panels (FED)"
 }]
 
 module.exports = products;

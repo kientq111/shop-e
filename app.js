@@ -8,12 +8,14 @@ var connectDB = require('./config/db')
 const usersRouter = require('./routes/users');
 const accountRouter = require('./routes/accounts');
 const productRouter = require('./routes/products');
-
+var cors = require('cors')
 //Initial Server
+
+
 require('dotenv').config()
 connectDB()
 var app = express();
-
+app.use(cors())
 
 app.use(logger('dev'));
 app.use(express.json());
