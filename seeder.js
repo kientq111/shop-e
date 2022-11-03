@@ -13,7 +13,6 @@ const importData = async () => {
     try {
         // await Account.deleteMany();
         // await Account.insertMany(users);
-        await Product.deleteMany();
         await Product.insertMany(products);
         console.log('insert successful');
     } catch (error) {

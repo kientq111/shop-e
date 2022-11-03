@@ -3,8 +3,18 @@ const Product = require('../models/productModel');
 
 
 const getAllProduct = expressAsyncHandler(async (req, res) => {
-    const product = await Product.find({}).select('-__v');
-    res.json(product);
+    const pageSize = 10;
+    const page = Number(req.query.pageNumber) || 1;
+    const keyword = req.query.keyword ? { name: { $regex: req.query.keyword } } : {}
+    const countProduct = await Product.countDocuments({ ...keyword });
+    const product = await Product.find({ ...keyword }).limit(pageSize).skip(pageSize * (page - 1)).select('-__v');
+    const totalPage = Math.ceil(countProduct / pageSize);
+    res.json({
+        product,
+        countProduct,
+        page,
+        totalPage
+    });
 })
 
 

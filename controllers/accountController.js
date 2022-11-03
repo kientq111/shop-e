@@ -7,15 +7,33 @@ const jwt = require('jsonwebtoken');
 
 const authLogin = expressAsyncHandler(async (req, res) => {
     const { userName, password } = req.body;
-    const account = await Account.findOne({ userName });
-    const checkPassword = await bcrypt.compare(password, account.password);
-    if (account && checkPassword) {
-        res.json({
-            accessToken: generateToken(account._id, process.env.JWT_SECRET_LOGIN, "10h"),
-        })
-    } else {
+    console.log(req.body);
+    try {
+        const account = await Account.findOne({ userName });
+        if (account.status === false) {
+            res.status(401);
+            throw new Error('Account has been blocked, please contact to admin to unblock this account!')
+        }
+        const checkPassword = await bcrypt.compare(password, account.password);
+        if (account && checkPassword) {
+            res.json({
+                data: {
+                    id: account._id,
+                    userName: account.userName,
+                    email: account.email,
+                    status: account.status,
+                    isVerify: account.isVerify,
+                    isAdmin: account.isAdmin
+                },
+                accessToken: generateToken(account._id, process.env.JWT_SECRET_LOGIN, "10h"),
+            })
+        } else {
+            res.status(401);
+            throw new Error('Invalid UserName or Password')
+        }
+    } catch (error) {
         res.status(401);
-        throw new Error('Invalid Email or Pwd')
+        throw new Error('Invalid UserName or Password')
     }
 })
 

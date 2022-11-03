@@ -25,7 +25,4 @@ const sendEmail = (toMail, subject, text) => {
     });
 }
 
-
-
-
 module.exports = { sendEmail }

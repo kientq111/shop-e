@@ -28,5 +28,8 @@ router.get('/:id', getProductById);
 // @access: Public - return token
 router.post('/:id/review', protect, reviewProduct);
 
+//5.
+//@desc Get Top New Product
+
 
 module.exports = router;
